@@ -11,7 +11,7 @@
 # POSTMAN : 
 
 
-## POST :
+## Generate Bearer jwt Token - POST :
 (will displat your JWT bearer token so you can access everything later on ):
 ```
 
@@ -38,7 +38,7 @@ ________
 
 
 
-## GET : 
+## Authorization - GET : 
 
 (will use the jwt bearer token to get access to your admin / profile info)
 
@@ -89,7 +89,7 @@ ________
 <br/>
 
 
-## GET : 
+## FindAll / FetchAll - GET : 
 
 ( fetchall : this will display all the application users and thier infos )
 
@@ -114,7 +114,7 @@ ________
 <br/>
 
 
-## GET  : 
+## FetchByID / FindByID - GET  : 
 (fetch user by id , don't forget to add your bearer token to the **Authorization** )
 
 ```
@@ -160,7 +160,7 @@ ________
 
 <br/>
 
-## GET :
+## FindByUserName - GET :
 ( find by username : /users/username/{us} )
 
 
@@ -177,7 +177,7 @@ ________
 <br/>
 
 
-## GET 
+## Change Password - GET 
 (change password : /password )
 
 ```
@@ -195,7 +195,7 @@ ________
 
 
 
-## PUT
+## Modify users - PUT
 (modify : /users )
 
 ```
@@ -206,6 +206,18 @@ http://localhost:8080/users
 
 
 
+<br/>
+
+________
+
+<br/>
+
+## QrCode - GET : 
+( this will generate a QRCode for you + add the authorization jwt bearer token before you send HTTP Request ) : 
+
+```
+http://localhost:8080/genrateAndDownloadQRCode/SILVER_IMAGE_PATH/350/350
+```
 
 
 

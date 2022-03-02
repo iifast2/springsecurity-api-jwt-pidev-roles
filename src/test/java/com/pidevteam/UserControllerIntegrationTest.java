@@ -99,11 +99,11 @@ class UserControllerIntegrationTest {
 
         // For Admin Test
         User user = new User();
-        user.setUsername("KARIMTEST");
+        user.setUsername("KIMOTEST");
         user.setPassword("abc123");
         user.setBirthdate("1998-01-20");
         user.setCin("1505093df08");
-        user.setEmail("kafrfim@gmail.com");
+        user.setEmail("kadfrfim@gmail.com");
 
 
 
@@ -129,7 +129,7 @@ class UserControllerIntegrationTest {
         userNoAdmin.setBirthdate("1998-01-20");
         userNoAdmin.setSalary(1000);
         userNoAdmin.setCin("15009308");
-        userNoAdmin.setEmail("karim@gmail.com");
+        userNoAdmin.setEmail("alex@gmail.com");
         userNoAdmin.setLeaveBalance(0L);
 
         HttpEntity<User> entityNoAdmin = new HttpEntity<User>(userNoAdmin, headersNoAdmin);

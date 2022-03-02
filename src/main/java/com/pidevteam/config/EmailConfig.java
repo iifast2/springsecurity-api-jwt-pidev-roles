@@ -16,8 +16,8 @@ public class EmailConfig
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
         mailSender.setHost("smtp.gmail.com");
         mailSender.setPort(587);
-        mailSender.setUsername("workwcms@gmail.com");
-        mailSender.setPassword("Wcms1234+");
+        mailSender.setUsername("Authdaritn@gmail.com");
+        mailSender.setPassword("Admin123%");
 
         Properties props = mailSender.getJavaMailProperties();
         props.put("mail.transport.protocol", "smtp");
@@ -32,9 +32,10 @@ public class EmailConfig
     public SimpleMailMessage emailTemplate()
     {
         SimpleMailMessage msg = new SimpleMailMessage();
-        msg.setTo("merjihaifa20@gmail.com");
+        msg.setTo("Authdaritn@gmail.com");
         msg.setSubject("Testing from Spring Boot");
         msg.setText("Hello World \n Spring Boot Email");
+        msg.setText("https://i.imgur.com/23FQY3S.png");
         return msg;
     }
 }

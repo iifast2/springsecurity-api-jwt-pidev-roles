@@ -3,7 +3,7 @@ package com.pidevteam;
 import com.mailjet.client.errors.MailjetException;
 import com.mailjet.client.errors.MailjetSocketTimeoutException;
 import com.pidevteam.config.seeder.SeedByOrder;
-import com.pidevteam.proprety.FileStorageProperties;
+//import com.pidevteam.proprety.FileStorageProperties;
 import com.pidevteam.repository.RoleRepository;
 import com.pidevteam.service.UserService;
 import org.modelmapper.ModelMapper;
@@ -17,7 +17,7 @@ import org.springframework.context.annotation.Bean;
 import javax.annotation.PostConstruct;
 
 @SpringBootApplication
-@EnableConfigurationProperties({FileStorageProperties.class})
+//@EnableConfigurationProperties({FileStorageProperties.class})
 public class Application implements CommandLineRunner {
     @Autowired
     private   RoleRepository roleRepository;

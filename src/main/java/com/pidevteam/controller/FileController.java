@@ -1,3 +1,4 @@
+/*
 package com.pidevteam.controller;
 
 import com.pidevteam.entity.Task;
@@ -29,7 +30,7 @@ public class FileController {
     @Autowired
     private RessourceService  ressourceService;
 
-    @PostMapping("/uploadFile")
+  //@PostMapping("/uploadFile")
     public UploadFileResponse uploadFile(@RequestParam("file") MultipartFile file, @RequestParam("task_id") Long task_id) {
         String fileName = fileStorageService.storeFile(file);
 
@@ -43,7 +44,7 @@ public class FileController {
         ressourceService.save(resource);
         return new UploadFileResponse(fileName, fileDownloadUri,
                 file.getContentType(), file.getSize());
-    }
+    }*/
 
 //    @PostMapping("/uploadMultipleFiles")
 //    public List<UploadFileResponse> uploadMultipleFiles(@RequestParam("files") MultipartFile[] files) {
@@ -52,7 +53,7 @@ public class FileController {
 //                .map(file -> uploadFile(file))
 //                .collect(Collectors.toList());
 //    }
-
+/*
     @GetMapping("/downloadFile/{fileName:.+}")
     public ResponseEntity<Resource> downloadFile(@PathVariable String fileName, HttpServletRequest request) {
         // Load file as Resource
@@ -76,4 +77,4 @@ public class FileController {
                 .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + resource.getFilename() + "\"")
                 .body(resource);
     }
-}
+}*/

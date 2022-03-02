@@ -1,3 +1,4 @@
+/*
 package com.pidevteam.proprety;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -21,3 +22,4 @@ public class FileStorageProperties {
         this.uploadDir = uploadDir;
     }
 }
+*/

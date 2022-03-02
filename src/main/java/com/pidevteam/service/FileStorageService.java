@@ -1,8 +1,9 @@
+/*
 package com.pidevteam.service;
 
 import com.pidevteam.exception.FileStorageException;
 import com.pidevteam.exception.MyFileNotFoundException;
-import com.pidevteam.proprety.FileStorageProperties;
+//import com.pidevteam.proprety.FileStorageProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
@@ -67,3 +68,4 @@ public class FileStorageService {
         }
     }
 }
+*/

@@ -2,7 +2,7 @@ package com.pidevteam.entity.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.pidevteam.entity.RoleEnum;
-import com.pidevteam.entity.UserProject;
+//import com.pidevteam.entity.UserProject;
 
 import java.util.List;
 
@@ -24,7 +24,8 @@ public class UserDto {
     private String linkedin;
 
     private List<RoleEnum> roles;
-    @JsonIgnore
+
+ /*   @JsonIgnore
     private List<UserProject> userProjects;
 
     public List<UserProject> getUserProjects() {
@@ -33,7 +34,7 @@ public class UserDto {
 
     public void setUserProjects(List<UserProject> userProjects) {
         this.userProjects = userProjects;
-    }
+    }*/
 
 
 
@@ -50,7 +51,7 @@ public class UserDto {
         this.email = email;
     }
 
-    public UserDto(Long id, String firstName, String lastName, String username, String password, long salary, String birthdate, String address, Long leaveBalance, String cin, String email, String rib, String facebook, String instagram, String linkedin, List <RoleEnum> roles, List <UserProject> userProjects) {
+    public UserDto(Long id, String firstName, String lastName, String username, String password, long salary, String birthdate, String address, Long leaveBalance, String cin, String email, String rib, String facebook, String instagram, String linkedin, List <RoleEnum> roles) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -67,7 +68,7 @@ public class UserDto {
         this.instagram = instagram;
         this.linkedin = linkedin;
         this.roles = roles;
-        this.userProjects = userProjects;
+
     }
 
     public UserDto() {

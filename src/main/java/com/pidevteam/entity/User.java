@@ -30,9 +30,9 @@ public class User {
     @Size(min = 3, message = "Password Length Should Be At Least 3!")
     private String password;
 
-    @Column
-    @NotNull
-    private long salary;
+    //@Column
+    //@NotNull
+    //private long salary;
 
     @Column
     @NotNull
@@ -40,16 +40,18 @@ public class User {
 
     private String address;
 
-    private Long leaveBalance;
+   // private Long leaveBalance;
 
-    private String rib;
-    private String facebook;
-    private String instagram;
-    private String linkedin;
+   // private String rib;
+   // private String facebook;
+   // private String instagram;
+   // private String linkedin;
 
-    @Column(unique = true)
-    @NotNull
-    private String cin;
+    //@Column(unique = true)
+    //@NotNull
+   // private String cin;
+
+
     @Column(unique = true)
     private String email;
 
@@ -117,13 +119,6 @@ public class User {
         this.password = password;
     }
 
-    public long getSalary() {
-        return salary;
-    }
-
-    public void setSalary(long salary) {
-        this.salary = salary;
-    }
 
 
     public List<Role> getRoles() {
@@ -150,6 +145,23 @@ public class User {
         this.address = address;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    /*
+    public long getSalary() {
+        return salary;
+    }
+
+    public void setSalary(long salary) {
+        this.salary = salary;
+    }
+
     public Long getLeaveBalance() {
         return leaveBalance;
     }
@@ -166,13 +178,6 @@ public class User {
         this.cin = cin;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
 
     public String getRib() {
         return rib;
@@ -205,7 +210,7 @@ public class User {
     public void setLinkedin(String linkedin) {
         this.linkedin = linkedin;
     }
-
+*/
 //    public List<Project> getProjects() {
 //        return projects;
 //    }

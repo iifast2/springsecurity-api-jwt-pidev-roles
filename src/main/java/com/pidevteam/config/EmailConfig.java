@@ -1,3 +1,4 @@
+/*
 package com.pidevteam.config;
 
 import java.util.Properties;
@@ -38,4 +39,4 @@ public class EmailConfig
         msg.setText("https://i.imgur.com/23FQY3S.png");
         return msg;
     }
-}
+}*/

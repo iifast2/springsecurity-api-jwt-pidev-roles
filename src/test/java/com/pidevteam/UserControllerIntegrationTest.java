@@ -102,7 +102,7 @@ class UserControllerIntegrationTest {
         user.setUsername("KIMOTEST");
         user.setPassword("abc123");
         user.setBirthdate("1998-01-20");
-        user.setCin("1505093df08");
+        // user.setCin("1505093df08");
         user.setEmail("kadfrfim@gmail.com");
 
 
@@ -117,9 +117,9 @@ class UserControllerIntegrationTest {
                 url+"/users/username/"+user.getUsername(), HttpMethod.GET, entityFromAdmin, User.class);
 
         assertEquals(user.getUsername(), resAdmin.getBody().getUsername());
-        assertEquals(user.getCin(), resAdmin.getBody().getCin());
+        //assertEquals(user.getCin(), resAdmin.getBody().getCin());
         assertEquals(user.getEmail(), resAdmin.getBody().getEmail());
-        assertEquals(user.getLeaveBalance(), resAdmin.getBody().getLeaveBalance());
+        //assertEquals(user.getLeaveBalance(), resAdmin.getBody().getLeaveBalance());
         assertEquals(user.getAddress(), resAdmin.getBody().getAddress());
 
         // For No Admin Test
@@ -127,10 +127,10 @@ class UserControllerIntegrationTest {
         userNoAdmin.setUsername("noadmin");
         userNoAdmin.setPassword("123456");
         userNoAdmin.setBirthdate("1998-01-20");
-        userNoAdmin.setSalary(1000);
-        userNoAdmin.setCin("15009308");
+        //userNoAdmin.setSalary(1000);
+        //userNoAdmin.setCin("15009308");
         userNoAdmin.setEmail("alex@gmail.com");
-        userNoAdmin.setLeaveBalance(0L);
+        //userNoAdmin.setLeaveBalance(0L);
 
         HttpEntity<User> entityNoAdmin = new HttpEntity<User>(userNoAdmin, headersNoAdmin);
         restTemplate.exchange(url+"/users", HttpMethod.POST, entityNoAdmin, String.class);
@@ -140,9 +140,9 @@ class UserControllerIntegrationTest {
                 url+"/users/username/"+userNoAdmin.getUsername(), HttpMethod.GET, entityNoAdmin, User.class);
 
         assertEquals(userNoAdmin.getUsername(), resNoAdmin.getBody().getUsername());
-        assertEquals(userNoAdmin.getCin(), resNoAdmin.getBody().getCin());
+        //assertEquals(userNoAdmin.getCin(), resNoAdmin.getBody().getCin());
         assertEquals(userNoAdmin.getEmail(), resNoAdmin.getBody().getEmail());
-        assertEquals(userNoAdmin.getLeaveBalance(), resNoAdmin.getBody().getLeaveBalance());
+       // assertEquals(userNoAdmin.getLeaveBalance(), resNoAdmin.getBody().getLeaveBalance());
         assertEquals(userNoAdmin.getAddress(), resNoAdmin.getBody().getAddress());
 
         // For No Auth Test

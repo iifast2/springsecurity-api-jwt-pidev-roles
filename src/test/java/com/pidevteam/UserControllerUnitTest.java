@@ -35,27 +35,28 @@ class UserControllerUnitTest {
         user.setUsername("We Code");
         user.setPassword("123456");
         user.setBirthdate("1998-01-20");
-        user.setSalary(1000);
-        user.setCin("15009308");
-        user.setEmail("karim@gmail.com");
-        user.setLeaveBalance(0L);
+        //user.setSalary(1000);
+        //user.setCin("15009308");
+      //  user.setEmail("karim@gmail.com");
+       // user.setLeaveBalance(0L);
         user.setFirstName("Karim");
         user.setLastName("Mannai");
-        user.setFacebook("Facebook");
-        user.setInstagram("Instagram");
-        user.setLinkedin("LinkedIn");
+        //user.setFacebook("Facebook");
+        //user.setInstagram("Instagram");
+        //user.setLinkedin("LinkedIn");
 
 
         assertNotNull(user.getUsername());
         assertNotNull(user.getPassword());
         assertNotNull(user.getBirthdate());
-        assertNotNull(user.getCin());
         assertNotNull(user.getEmail());
-        assertNotNull(user.getFacebook());
         assertNotNull(user.getLastName());
+
+/*        assertNotNull(user.getCin());
+        assertNotNull(user.getFacebook());
         assertNotNull(user.getFacebook());
         assertNotNull(user.getInstagram());
-        assertNotNull(user.getLinkedin());
+        assertNotNull(user.getLinkedin());*/
 
         assert user.getUsername().length() >=3 : "Username Length Should Be At Least 3!";
         assert user.getPassword().length() >=6 : "Password Length Should Be At Least 3!";
@@ -85,7 +86,7 @@ class UserControllerUnitTest {
         UserDto userDto = new UserDto();
         userDto.setBirthdate(user.getBirthdate());
         userDto.setPassword(user.getPassword());
-        userDto.setSalary((int) user.getSalary());
+       // userDto.setSalary((int) user.getSalary());
         userDto.setUsername(user.getUsername());
         userService.save(userDto);
 
@@ -103,18 +104,21 @@ class UserControllerUnitTest {
         assertNotNull(us);
         assertEquals(us.getPassword(), user.getPassword());
         assertEquals(us.getBirthdate(), user.getBirthdate());
-        assertEquals(us.getSalary(), user.getSalary());
+
         assertEquals(us.getUsername(), user.getUsername());
+        assertEquals(us.getEmail(), user.getEmail());
         assertEquals(us.getRoles(), user.getRoles());
         assertEquals(us.getAddress(), user.getAddress());
+        assertEquals(us.getFirstName(), user.getFirstName());
+        assertEquals(us.getLastName(), user.getLastName());
+
+   /*     assertEquals(us.getSalary(), user.getSalary());
         assertEquals(us.getCin(), user.getCin());
-        assertEquals(us.getEmail(), user.getEmail());
         assertEquals(us.getLeaveBalance(), user.getLeaveBalance());
         assertEquals(us.getFacebook(), user.getFacebook());
         assertEquals(us.getInstagram(), user.getInstagram());
-        assertEquals(us.getLinkedin(), user.getLinkedin());
-        assertEquals(us.getFirstName(), user.getFirstName());
-        assertEquals(us.getLastName(), user.getLastName());
+        assertEquals(us.getLinkedin(), user.getLinkedin());*/
+
 
         assert user.getUsername().length() >=3 : "Username Length Should Be At Least 3!";
         assert us.getPassword().length() >=6 : "Password Length Should Be At Least 3!";

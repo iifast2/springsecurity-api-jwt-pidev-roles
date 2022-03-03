@@ -134,10 +134,8 @@ public class UserController {
     public Boolean changePassword(@RequestBody ChangePasswordVM user)
     {
         User us = userService.findOne(SecurityContextHolder.getContext().getAuthentication().getName());
-
         return userService.changePassword(user, us.getUsername());
     }
-
 
     // For Test
     @RequestMapping(value = "/users/username/{us}", method = RequestMethod.GET)

@@ -24,8 +24,8 @@ public class QRCodeController {
     */
 
     private static final String QR_CODE_IMAGE_PATH = "./src/main/resources/QRCode.png";
-    // private static final String GOLD_IMAGE_PATH = "./src/main/mybadges/goldbadge.png";
-    private static final String SILVER_IMAGE_PATH = "i.imgur.com/lTZHFRk.png";
+     private static final String GOLD_IMAGE_PATH = "./src/main/mybadges/goldbadge.png";
+    //private static final String SILVER_IMAGE_PATH = "i.imgur.com/lTZHFRk.png";
     // private static final String BRONZE_IMAGE_PATH = "file:///C:/Users/medaminebt/Downloads/SPRING%20QR%20CODE%20BADGES/GOLD%20BADGE.png";
     //private static final String uploaduri = "https://api.anonfiles.com/v2/QR_CODE_IMAGE_PATH/username4321/info";
 
@@ -33,7 +33,7 @@ public class QRCodeController {
 
 
     public static String getSilverImagePath() {
-        return SILVER_IMAGE_PATH;
+        return GOLD_IMAGE_PATH;
     }
 
     @GetMapping(value = "/genrateAndDownloadQRCode/{codeText}/{width}/{height}")
@@ -42,10 +42,8 @@ public class QRCodeController {
             @PathVariable("width") Integer width,
             @PathVariable("height") Integer height)
             throws Exception {
-        QRCodeGenerator.generateQRCodeImage(SILVER_IMAGE_PATH, width, height, QR_CODE_IMAGE_PATH);
+        QRCodeGenerator.generateQRCodeImage(GOLD_IMAGE_PATH, width, height, QR_CODE_IMAGE_PATH);
     }
-
-
 
     @GetMapping(value = "/genrateQRCode/{codeText}/{width}/{height}")
     public ResponseEntity<byte[]> generateQRCode(

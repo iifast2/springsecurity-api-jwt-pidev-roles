@@ -53,15 +53,15 @@ public class Application implements CommandLineRunner {
 
 
 
-            Mail mail = new Mail();
-            mail.setMailFrom("Authdaritn@gmail.com");
-            mail.setMailTo("Authdaritn@gmail.com");
+/*           Mail mail = new Mail();
+            mail.setMailFrom("anonymousmega04@gmail.com");
+            mail.setMailTo("anonymousmega04@gmail.com");
             mail.setMailSubject("Spring Boot - Email Example");
             mail.setMailContent("Learn How to send Email using Spring Boot!!!\n\nThanks\nmabttech.medium.com");
 
             ApplicationContext ctx = SpringApplication.run(Application.class, args);
             MailService mailService = (MailService) ctx.getBean("mailService");
-            mailService.sendEmail(mail);
+            mailService.sendEmail(mail);*/
     }
 
 

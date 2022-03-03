@@ -85,14 +85,9 @@ public class UserServiceImpl implements UserDetailsService, UserService {
 		newUser.setBirthdate(user.getBirthdate());
 		newUser.setEmail(user.getEmail());
 		newUser.setAddress(user.getAddress());
-		//newUser.setCin(user.getCin());
-		//newUser.setLeaveBalance(user.getLeaveBalance());
-		//newUser.setFirstName(user.getFirstName());
-		//newUser.setLastName(user.getLastName());
-		//newUser.setRib(user.getRib());
-/*		newUser.setLinkedin(user.getLinkedin());
-		newUser.setFacebook(user.getFacebook());
-		newUser.setInstagram(user.getInstagram());*/
+		//newUser.setSubscription
+		// (user.getCin());
+
 		if( user.getRoles() != null){
 
             for (RoleEnum role: user.getRoles()) {

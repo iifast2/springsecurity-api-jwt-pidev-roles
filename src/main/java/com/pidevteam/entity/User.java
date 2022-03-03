@@ -35,7 +35,7 @@ public class User {
     //private long salary;
 
     @Column
-    @NotNull
+    //@NotNull
     private String birthdate;
 
     private String address;

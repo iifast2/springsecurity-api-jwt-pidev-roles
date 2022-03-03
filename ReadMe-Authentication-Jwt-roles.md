@@ -202,6 +202,44 @@ ________
 http://localhost:8080/users
 ```
 
+```
+
+{
+    "id": 4,
+    "firstName": null,
+    "lastName": null,
+    "username": "userr",
+    "birthdate": null,
+    "address": "rue esprit",
+    "email": "Authdaritnn@gmail.com",
+    "notifications": null,
+    "roles": ["ADMIN"]
+    }
+    
+```
+
+![modify_user](https://i.imgur.com/ExjHFUS.png)
+
+
+## Add User - POST : 
+
+```
+http://localhost:8080/users
+```
+
+```
+{
+    "username" : "user1",
+    "password" : "user",
+    "email": "adminuser@gmail.com",
+    "roles": ["ADMIN"]
+}
+```
+
+![add-user](https://i.imgur.com/FkkDDVQ.png)
+
+
+
 
 
 
@@ -209,8 +247,22 @@ http://localhost:8080/users
 <br/>
 
 ________
+________
 
 <br/>
+
+
+
+
+
+
+
+
+
+
+
+# QRCode Generator 
+
 
 ## QrCode - GET : 
 ( this will generate a QRCode for you + add the authorization jwt bearer token before you send HTTP Request ) : 

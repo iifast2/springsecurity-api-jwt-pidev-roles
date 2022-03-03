@@ -3,6 +3,7 @@ package com.pidevteam.entity;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
@@ -33,8 +34,8 @@ public class Subscription implements Serializable {
 
 // private Integer frais;
 
-    @ManyToOne
-    User users;
+    @OneToMany(mappedBy = "subscriptions")
+    List<User> users;
 
 
 

@@ -12,9 +12,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
-//import com.springboot.emailsender.model.Mail;
-
 import com.pidevteam.entity.Mail;
+
+
 @Service("mailService")
 public class MailServiceImpl implements MailService {
 

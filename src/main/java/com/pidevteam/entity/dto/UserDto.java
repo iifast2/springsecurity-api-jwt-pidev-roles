@@ -18,10 +18,11 @@ public class UserDto {
     private Long leaveBalance;
     private String cin;
     private String email;
+    /*
     private String rib;
     private String facebook;
     private String instagram;
-    private String linkedin;
+    private String linkedin;*/
 
     private List<RoleEnum> roles;
 
@@ -63,10 +64,10 @@ public class UserDto {
         this.leaveBalance = leaveBalance;
         this.cin = cin;
         this.email = email;
-        this.rib = rib;
+/*        this.rib = rib;
         this.facebook = facebook;
         this.instagram = instagram;
-        this.linkedin = linkedin;
+        this.linkedin = linkedin;*/
         this.roles = roles;
 
     }
@@ -155,7 +156,7 @@ public class UserDto {
         this.roles = roles;
     }
 
-    public String getRib() {
+   /* public String getRib() {
         return rib;
     }
 
@@ -185,7 +186,7 @@ public class UserDto {
 
     public void setLinkedin(String linkedin) {
         this.linkedin = linkedin;
-    }
+    }*/
 
     public String getFirstName() {
         return firstName;

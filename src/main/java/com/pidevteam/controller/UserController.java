@@ -1,13 +1,18 @@
 package com.pidevteam.controller;
 
+import com.pidevteam.entity.Mail;
 import com.pidevteam.entity.Notification;
 import com.pidevteam.entity.User;
 
 import com.pidevteam.entity.dto.UserDto;
 import com.pidevteam.entity.util.ChangePasswordVM;
+import com.pidevteam.service.MailService;
 import com.pidevteam.service.NotificationService;
 import com.pidevteam.service.UserService;
+import com.sun.javafx.fxml.BeanAdapter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,6 +22,12 @@ import java.util.List;
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 public class UserController {
+
+    // @Autowired
+   // private Environment env ;
+
+    @Autowired
+    MailService mailService;
 
     @Autowired
     private UserService userService;
@@ -41,8 +52,44 @@ public class UserController {
 //    @PreAuthorize("hasRole('ADMIN')")
     @RequestMapping(value="/users", method = RequestMethod.POST)
     public User saveUser(@RequestBody UserDto user){
+
+   /*     Mail mail = new Mail();
+        mail.setMailFrom("Authdaritn@gmail.com");
+        mail.setMailTo("Authdaritn@gmail.com");
+        mail.setMailSubject("Spring Boot - Email Example");
+        mail.setMailContent("Learn How to send Email using Spring Boot!!!\n\nThanks\nmabttech.medium.com");
+
+        //BeanAdapter ctx;
+        MailService mailService = null;
+        mailService.sendEmail(mail);*/
+
+
         return userService.save(user);
 //        return modelMapper.map(userService.save(user),UserDto.class);
+
+
+
+
+
+    /*    private SimpleMailMessage constructResetTokenEmail(User user) {
+            String url = env.getProperty("app.emailurl");
+            String message = "Bonjour  "+user.getNom()+",  \r\n"+"lien: ";
+            return constructEmail("Votre compte sur hpm", message + " \r\n" + url, user);
+        }
+
+        private SimpleMailMessage constructResetTokenEmail(User user) {
+            String url = env.getProperty("app.emailurl") ;
+            String message = "Bonjour  "+user.getNom()+",  \r\n"+"lien: ";
+            return constructEmail("Votre compte sur hpm", message + " \r\n" + url, user);
+        }
+
+        private SimpleMailMessage constructEmail(String subject, String body,
+                User user) {
+            SimpleMailMessage email = new SimpleMailMessage();
+            @Autowired
+            JavaMailSender mailSender ;
+            mailSender.send(constructResetTokenEmail(token, user));
+*/
     }
 
     @RequestMapping(value = "/auth", method = RequestMethod.GET)
@@ -80,10 +127,14 @@ public class UserController {
        return notificationService.saveAll(notificationsnew);
     }
 
+    //simpMessagingTemplate.convertAndSend("/scrumboard/"+task.getIndicator().getProjectClient().getId(), projectWSPayload);
+
+
     @RequestMapping(value = "/password", method = RequestMethod.POST)
     public Boolean changePassword(@RequestBody ChangePasswordVM user)
     {
         User us = userService.findOne(SecurityContextHolder.getContext().getAuthentication().getName());
+
         return userService.changePassword(user, us.getUsername());
     }
 

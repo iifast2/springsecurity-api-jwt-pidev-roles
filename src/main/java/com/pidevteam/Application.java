@@ -1,11 +1,15 @@
 package com.pidevteam;
 
 import com.mailjet.client.errors.MailjetException;
+import org.springframework.context.ApplicationContext;
 import com.mailjet.client.errors.MailjetSocketTimeoutException;
 import com.pidevteam.config.seeder.SeedByOrder;
 //import com.pidevteam.proprety.FileStorageProperties;
+import com.pidevteam.entity.Mail;
 import com.pidevteam.repository.RoleRepository;
+import com.pidevteam.service.MailService;
 import com.pidevteam.service.UserService;
+import com.sun.javafx.fxml.BeanAdapter;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -14,6 +18,17 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 
+
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+
+
+
+
 import javax.annotation.PostConstruct;
 
 @SpringBootApplication
@@ -21,6 +36,7 @@ import javax.annotation.PostConstruct;
 public class Application implements CommandLineRunner {
     @Autowired
     private   RoleRepository roleRepository;
+
 
     @Autowired
     private UserService userService;
@@ -34,6 +50,18 @@ public class Application implements CommandLineRunner {
     public static void main(String[] args) {
        SpringApplication.run(Application.class, args);
 
+
+
+
+            Mail mail = new Mail();
+            mail.setMailFrom("Authdaritn@gmail.com");
+            mail.setMailTo("Authdaritn@gmail.com");
+            mail.setMailSubject("Spring Boot - Email Example");
+            mail.setMailContent("Learn How to send Email using Spring Boot!!!\n\nThanks\nmabttech.medium.com");
+
+            ApplicationContext ctx = SpringApplication.run(Application.class, args);
+            MailService mailService = (MailService) ctx.getBean("mailService");
+            mailService.sendEmail(mail);
     }
 
 

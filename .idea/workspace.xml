@@ -6,11 +6,34 @@
   <component name="ChangeListManager">
     <list default="true" id="ed8ffe5e-61d1-4efc-b393-8f4cad57b8b6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/config/EmailConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/config/EmailConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/config/EmailConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/config/seeder/UsersSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/config/seeder/UsersSeeder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/controller/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/controller/AuthorizationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/controller/AuthorizationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/controller/QRCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/controller/QRCodeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/entity/Subscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/entity/Subscription.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/pidevteam/UserControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pidevteam/UserControllerIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/pidevteam/UserControllerUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pidevteam/UserControllerUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/entity/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/entity/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/MailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/impl/MailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/impl/MailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pidevteam/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/config/seeder/UsersSeeder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pidevteam/config/seeder/UsersSeeder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/controller/AuthenticationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pidevteam/controller/AuthenticationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/controller/AuthorizationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pidevteam/controller/AuthorizationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/controller/QRCodeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pidevteam/controller/QRCodeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pidevteam/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/entity/Subscription.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pidevteam/entity/Subscription.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pidevteam/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/entity/dto/UserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pidevteam/entity/dto/UserDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/service/EmailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/service/impl/SubscriptionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pidevteam/service/impl/SubscriptionServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pidevteam/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

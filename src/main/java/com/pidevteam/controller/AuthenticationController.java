@@ -3,7 +3,7 @@ package com.pidevteam.controller;
 import com.pidevteam.config.TokenProvider;
 import com.pidevteam.entity.util.AuthToken;
 import com.pidevteam.entity.util.LoginUser;
-import com.pidevteam.service.EmailService;
+//import com.pidevteam.service.EmailService;
 import com.pidevteam.service.UserService;
 import com.sendgrid.Mail;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,8 +19,8 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class AuthenticationController {
 
-    @Autowired
-    EmailService emailService;
+   // @Autowired
+    //EmailService emailService;
 
     @Autowired
     private AuthenticationManager authenticationManager;

@@ -59,6 +59,10 @@ public class User {
     @OneToMany(mappedBy = "user")
     private List<Notification> notifications;
 
+    @ManyToOne
+    private Subscription subscriptions;
+
+
 /*
     @OneToMany(mappedBy = "primaryKey.user",
             cascade = CascadeType.ALL)

@@ -1,20 +1,25 @@
 package com.pidevteam.controller;
 
+import com.pidevteam.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
+import com.pidevteam.entity.User;
 
 import java.net.URI;
+
 
 @RestController
 public class QRCodeController {
 
+    @Autowired
+    UserService userService;
+
     /*
-             You can change the String to : link, file path, image path, ID, username
-             , email address, secret client code, simple text, product name, product number, URL ..etc
-               Testing Link using post man ( GET REQUEST ) :
+            ( GET REQUEST ) :
                http://localhost:8080/genrateAndDownloadQRCode/SILVER_IMAGE_PATH/350/350
     */
 
@@ -24,6 +29,12 @@ public class QRCodeController {
     // private static final String BRONZE_IMAGE_PATH = "file:///C:/Users/medaminebt/Downloads/SPRING%20QR%20CODE%20BADGES/GOLD%20BADGE.png";
     //private static final String uploaduri = "https://api.anonfiles.com/v2/QR_CODE_IMAGE_PATH/username4321/info";
 
+    // private static final String SILVER_IMAGE_PATH = "i.imgur.com/lTZHFRk.png";
+
+
+    public static String getSilverImagePath() {
+        return SILVER_IMAGE_PATH;
+    }
 
     @GetMapping(value = "/genrateAndDownloadQRCode/{codeText}/{width}/{height}")
     public void download(

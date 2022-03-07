@@ -5,36 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed8ffe5e-61d1-4efc-b393-8f4cad57b8b6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReadMe-Authentication-Jwt-roles.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe-Authentication-Jwt-roles.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/config/MailConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/config/MailConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/config/seeder/UsersSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/config/seeder/UsersSeeder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/controller/AuthorizationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/controller/AuthorizationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/controller/QRCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/controller/QRCodeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/controller/QRCodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/controller/QRCodeGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/entity/Mail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/entity/Mail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/AuthorizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/AuthorizationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/MailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/impl/MailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/impl/MailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/QRCode.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/QRCode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/QRCode.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/QRCode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/config/MailConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/controller/AuthorizationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/controller/QRCodeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pidevteam/controller/QRCodeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/controller/QRCodeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pidevteam/controller/QRCodeGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pidevteam/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/entity/Mail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/service/AuthorizationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/service/MailService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/service/impl/MailServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/service/impl/SubscriptionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pidevteam/service/impl/SubscriptionServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pidevteam/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/controller/FileController.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +121,7 @@
       <workItem from="1646576113923" duration="9030000" />
       <workItem from="1646598192630" duration="2073000" />
       <workItem from="1646643216188" duration="311000" />
-      <workItem from="1646643695008" duration="7003000" />
+      <workItem from="1646643695008" duration="7435000" />
     </task>
     <servers />
   </component>
@@ -171,46 +142,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/pidevteam/controller/FileController.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/pidevteam/controller/FileController.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/pidevteam/controller/FileController.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/pidevteam/controller/FileController.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/pidevteam/controller/FileController.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/pidevteam/controller/FileController.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/pidevteam/controller/FileController.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/pidevteam/controller/FileController.java</url>
-          <line>69</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/pidevteam/service/ProjectService.java</url>
           <line>33</line>

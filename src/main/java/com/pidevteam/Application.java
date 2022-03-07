@@ -1,8 +1,9 @@
 package com.pidevteam;
 
-import com.mailjet.client.errors.MailjetException;
+//import com.mailjet.client.errors.MailjetException;
+import com.sun.mail.util.MailConnectException;
 import org.springframework.context.ApplicationContext;
-import com.mailjet.client.errors.MailjetSocketTimeoutException;
+//import com.mailjet.client.errors.MailjetSocketTimeoutException;
 import com.pidevteam.config.seeder.SeedByOrder;
 //import com.pidevteam.proprety.FileStorageProperties;
 //import com.pidevteam.entity.Mail;
@@ -25,8 +26,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
-
-
+import org.springframework.mail.MailAuthenticationException;
+import org.springframework.mail.MailException;
+import org.springframework.mail.MailSendException;
 
 
 import javax.annotation.PostConstruct;
@@ -65,8 +67,6 @@ public class Application implements CommandLineRunner {
     }
 
 
-
-
     @Override
     public void run(String... args) throws Exception {
 //        //roles seeder
@@ -78,9 +78,23 @@ public class Application implements CommandLineRunner {
 
     }
     @PostConstruct
+    public void init() throws  MailConnectException, MailSendException {
+        seedByOrder.init();
+      //  User  user = userService.findById(1L);
+     //   userService.save(new UserDto(user.getId(), user.getUsername(), user.getPassword(), 10000000L,user.getBirthdate(), user.getAddress(), user.getLeaveBalance(), user.getCin(), user.getEmail()));
+    }
+}
+
+
+
+/*
+// the OLD one :
+
     public void init() throws MailjetSocketTimeoutException, MailjetException {
         seedByOrder.init();
       //  User  user = userService.findById(1L);
      //   userService.save(new UserDto(user.getId(), user.getUsername(), user.getPassword(), 10000000L,user.getBirthdate(), user.getAddress(), user.getLeaveBalance(), user.getCin(), user.getEmail()));
     }
 }
+
+ */

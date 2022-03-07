@@ -18,8 +18,6 @@ public class Role {
 
     @Column
     private String description;
-    //@Column
-    //private String test;
 
 
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
@@ -66,15 +64,6 @@ public class Role {
     public Role() {
     }
 
-  /*  @Override
-    public String toString() {
-        return "Role{" +
-                "id=" + id +
-                ", name=" + name +
-                ", description='" + description + '\'' +
-                ", users=" + users +
-                '}';
-    }*/
 
     public Role(RoleEnum s, String s1) {
 
@@ -82,38 +71,4 @@ public class Role {
         description= s1;
     }
 
-   /* public Role() {
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public List<Role> getUsers() {
-        return users;
-    }
-
-    public void setUsers(List<Role> users) {
-        this.users = users;
-    }*/
 }

@@ -12,62 +12,45 @@ public class UserDto {
     private String lastName;
     private String username;
     private String password;
-    private long salary;
+  //  private long salary;
     private String birthdate;
     private String address;
-    private Long leaveBalance;
-    private String cin;
+  //  private Long leaveBalance;
+   // private String cin;
     private String email;
-    /*
-    private String rib;
-    private String facebook;
-    private String instagram;
-    private String linkedin;*/
 
     private List<RoleEnum> roles;
 
- /*   @JsonIgnore
-    private List<UserProject> userProjects;
-
-    public List<UserProject> getUserProjects() {
-        return userProjects;
-    }
-
-    public void setUserProjects(List<UserProject> userProjects) {
-        this.userProjects = userProjects;
-    }*/
-
-
-
-
-    public UserDto(Long id, String username, String password, long salary, String birthdate, String address, Long leaveBalance, String cin, String email) {
+    public UserDto(Long id, String username, String password, String birthdate, String address,String email) {
         this.id = id;
         this.username = username;
         this.password = password;
-        this.salary = salary;
         this.birthdate = birthdate;
         this.address = address;
-        this.leaveBalance = leaveBalance;
-        this.cin = cin;
         this.email = email;
     }
 
-    public UserDto(Long id, String firstName, String lastName, String username, String password, long salary, String birthdate, String address, Long leaveBalance, String cin, String email, String rib, String facebook, String instagram, String linkedin, List <RoleEnum> roles) {
+    public UserDto(Long id, String firstName, String lastName, String username, String password, String birthdate, String address, String email) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.username = username;
         this.password = password;
-        this.salary = salary;
         this.birthdate = birthdate;
         this.address = address;
-        this.leaveBalance = leaveBalance;
-        this.cin = cin;
         this.email = email;
-/*        this.rib = rib;
-        this.facebook = facebook;
-        this.instagram = instagram;
-        this.linkedin = linkedin;*/
+    }
+
+    public UserDto(Long id, String firstName, String lastName, String username, String password, String birthdate, String address, String email, List <RoleEnum> roles) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.username = username;
+        this.password = password;
+        this.birthdate = birthdate;
+        this.address = address;
+
+        this.email = email;
         this.roles = roles;
 
     }
@@ -96,13 +79,6 @@ public class UserDto {
         this.password = password;
     }
 
-    public long getSalary() {
-        return salary;
-    }
-
-    public void setSalary(long salary) {
-        this.salary = salary;
-    }
 
     public String getBirthdate() {
         return birthdate;
@@ -120,24 +96,9 @@ public class UserDto {
         this.address = address;
     }
 
-    public Long getLeaveBalance() {
-        return leaveBalance;
-    }
-
-    public void setLeaveBalance(Long leaveBalance) {
-        this.leaveBalance = leaveBalance;
-    }
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public String getCin() {
-        return cin;
-    }
-
-    public void setCin(String cin) {
-        this.cin = cin;
     }
 
     public String getEmail() {
@@ -155,38 +116,6 @@ public class UserDto {
     public void setRoles(List<RoleEnum> roles) {
         this.roles = roles;
     }
-
-   /* public String getRib() {
-        return rib;
-    }
-
-    public void setRib(String rib) {
-        this.rib = rib;
-    }
-
-    public String getFacebook() {
-        return facebook;
-    }
-
-    public void setFacebook(String facebook) {
-        this.facebook = facebook;
-    }
-
-    public String getInstagram() {
-        return instagram;
-    }
-
-    public void setInstagram(String instagram) {
-        this.instagram = instagram;
-    }
-
-    public String getLinkedin() {
-        return linkedin;
-    }
-
-    public void setLinkedin(String linkedin) {
-        this.linkedin = linkedin;
-    }*/
 
     public String getFirstName() {
         return firstName;

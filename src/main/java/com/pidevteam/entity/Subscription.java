@@ -32,7 +32,7 @@ public class Subscription implements Serializable {
     private Date datefin;
 
 
-// private Integer frais;
+
 
     @OneToMany(mappedBy = "subscriptions")
     List<User> users;
@@ -101,18 +101,6 @@ public class Subscription implements Serializable {
     public void setDatefin(Date datefin) {
         this.datefin = datefin;
     }
-
-/*
-    public Integer getFrais() {
-        return frais;
-    }
-    public void setFrais(Integer frais) {
-        this.frais = frais;
-    }
-*/
-
-
-
 
 
 }

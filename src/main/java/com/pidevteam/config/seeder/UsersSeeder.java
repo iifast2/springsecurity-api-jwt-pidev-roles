@@ -28,12 +28,29 @@ public class UsersSeeder {
 
 
 
-    UserDto user2 = new UserDto(null,"admin" ,"admin" ,1150L ,
-            "1997/6/7","address" ,30L , "07889877",
-            "admin@gmail.com");
-    user2.setRoles(rolesAdmin);
-    userService.save(user2);
+UserDto user2 = new UserDto(null,"admin" ,"admin"  ,
+    "1997/6/7","address" ,
+    "admin@gmail.com");
+user2.setRoles(rolesAdmin);
+userService.save(user2);
 
+        UserDto user3 = new UserDto(null,"med amine" ,"ben taieb" ,"admin1" ,
+                "admin1","1997/6/7" ,"cité olympique , Rue 123" ,
+                "anonymousmega04@gmail.com");
+        user3.setRoles(rolesAdmin);
+        userService.save(user3);
+
+
+   // MANAGER
+UserDto user4 = new UserDto(null,"wafa" ,"AAA" ,"manager" ,
+        "manager","1997/6/7" ,"cité ghazela - Rue 321" ,
+        "mangerrrr123@gmail.com");
+user4.setRoles(rolesAdmin);
+userService.save(user4);
+
+
+
+/*
         UserDto user3 = new UserDto(null,"admin1" ,"admin1" ,1150L ,
                 "1997/6/7","address" ,30L ,
                 "07898878", "wafabenyahia71@gmail.com");
@@ -46,6 +63,7 @@ userService.save(user3);
         "adminnnnn@gmail.com");
     user4.setRoles(rolesM);
     userService.save(user4);
+*/
 
 
 

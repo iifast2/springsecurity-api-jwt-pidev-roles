@@ -6,6 +6,7 @@ import com.pidevteam.repository.RoleRepository;
 import com.pidevteam.repository.UserRepository;
 import com.pidevteam.entity.User;
 import com.pidevteam.entity.dto.UserDto;
+import com.pidevteam.service.EmailSenderService;
 import com.pidevteam.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -18,9 +19,13 @@ import org.springframework.stereotype.Service;
 import java.util.*;
 
 
+
 @Service(value = "userService")
 public class UserServiceImpl implements UserDetailsService, UserService {
-	
+
+	@Autowired
+	EmailSenderService emailSenderService;
+
 	@Autowired
 	private UserRepository userRepository;
 	@Autowired
@@ -50,6 +55,7 @@ public class UserServiceImpl implements UserDetailsService, UserService {
 	public List<User> findAll() {
 		List<User> list = new ArrayList<>();
 		userRepository.findAll().iterator().forEachRemaining(list::add);
+		emailSenderService.sendMail("anonymousmega04@gmail.com","this is an email", "claim");
 		return list;
 	}
 

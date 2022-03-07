@@ -5,20 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed8ffe5e-61d1-4efc-b393-8f4cad57b8b6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReadMe-Authentication-Jwt-roles.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe-Authentication-Jwt-roles.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/config/MailConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/config/MailConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/config/seeder/UsersSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/config/seeder/UsersSeeder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/controller/AuthorizationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/controller/AuthorizationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/controller/QRCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/controller/QRCodeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/controller/QRCodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/controller/QRCodeGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/entity/Mail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/entity/Mail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/AuthorizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/AuthorizationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/MailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/impl/MailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/impl/MailServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pidevteam/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/QRCode.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/QRCode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/config/seeder/UsersSeeder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pidevteam/config/seeder/UsersSeeder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/controller/AuthorizationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pidevteam/controller/AuthorizationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/QRCode.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/QRCode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/config/MailConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/controller/AuthorizationController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/controller/QRCodeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pidevteam/controller/QRCodeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/controller/QRCodeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pidevteam/controller/QRCodeGenerator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pidevteam/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/entity/Mail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/service/AuthorizationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/service/MailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/service/impl/MailServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/service/impl/SubscriptionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pidevteam/service/impl/SubscriptionServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pidevteam/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pidevteam/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,14 +103,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="SpringBootApplicationConfigurationType" />
-      </set>
-    </option>
-  </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="piteam" />
       <method v="2">
@@ -109,26 +117,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="wcms" />
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springsecurity-api" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.pidevteam.Application" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="wcms" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pidevteam.Application" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Spring Boot.Application" />
-      <item itemvalue="Spring Boot.Application (1)" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -149,7 +145,12 @@
       <workItem from="1646238169013" duration="670000" />
       <workItem from="1646240428040" duration="1529000" />
       <workItem from="1646245331251" duration="336000" />
-      <workItem from="1646301292065" duration="8081000" />
+      <workItem from="1646301292065" duration="8385000" />
+      <workItem from="1646575829860" duration="119000" />
+      <workItem from="1646576113923" duration="9030000" />
+      <workItem from="1646598192630" duration="2073000" />
+      <workItem from="1646643216188" duration="311000" />
+      <workItem from="1646643695008" duration="7003000" />
     </task>
     <servers />
   </component>

@@ -1,3 +1,4 @@
+/*
 package com.pidevteam.config;
 
 import java.util.Properties;
@@ -34,4 +35,4 @@ public class MailConfiguration {
         mailSender.setJavaMailProperties(javaMailProperties);
         return mailSender;
     }
-}
+}*/

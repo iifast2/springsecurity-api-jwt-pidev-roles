@@ -1,3 +1,4 @@
+/*
 package com.pidevteam.service.impl;
 
 
@@ -46,3 +47,4 @@ public class MailServiceImpl implements MailService {
 
 
 }
+*/

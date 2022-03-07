@@ -23,8 +23,8 @@ public class QRCodeGenerator {
         Path path = FileSystems.getDefault().getPath(filePath);
         MatrixToImageWriter.writeToPath(bitMatrix, "PNG", path);
 
-        System.out.println("\n your badge : .\n");
-        System.out.println("\n https://i.imgur.com/lTZHFRk.png .\n");
+        System.out.println("\n Success! You can check you badge !!!\n");
+     // System.out.println("\n https://i.imgur.com/lTZHFRk.png .\n");
 
 
     }

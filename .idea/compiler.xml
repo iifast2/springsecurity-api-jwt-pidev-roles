@@ -9,12 +9,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="wcms" />
         <module name="piteam" />
+        <module name="springsecurity-api" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="piteam" options="-parameters" />
+      <module name="springsecurity-api" options="-parameters" />
       <module name="wcms" options="-parameters" />
     </option>
   </component>

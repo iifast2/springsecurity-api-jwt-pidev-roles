@@ -1,3 +1,4 @@
+/*
 package com.pidevteam.service;
 
 import com.pidevteam.entity.Authorization;
@@ -22,3 +23,4 @@ public class AuthorizationService {
     public Authorization findById(Long id){return authorizationRepository.findById(id).get();}
     public  void deleteById(Long id){authorizationRepository.deleteById(id);}
 }
+*/

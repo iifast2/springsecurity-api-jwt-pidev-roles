@@ -1,12 +1,12 @@
 package com.pidevteam.controller;
 
-import com.pidevteam.entity.Mail;
+//import com.pidevteam.entity.Mail;
 import com.pidevteam.entity.Notification;
 import com.pidevteam.entity.User;
 
 import com.pidevteam.entity.dto.UserDto;
 import com.pidevteam.entity.util.ChangePasswordVM;
-import com.pidevteam.service.MailService;
+//import com.pidevteam.service.MailService;
 import com.pidevteam.service.NotificationService;
 import com.pidevteam.service.UserService;
 import com.sun.javafx.fxml.BeanAdapter;
@@ -26,8 +26,8 @@ public class UserController {
     // @Autowired
    // private Environment env ;
 
-    @Autowired
-    MailService mailService;
+//    @Autowired
+  //  MailService mailService;
 
     @Autowired
     private UserService userService;

@@ -1,3 +1,4 @@
+/*
 package com.pidevteam.entity;
 
 import java.util.Date;
@@ -93,4 +94,4 @@ public class Mail {
         this.attachments = attachments;
     }
 
-}
+}*/

@@ -1,8 +1,10 @@
+/*
 package com.pidevteam.controller;
 
 import com.pidevteam.entity.Authorization;
 import com.pidevteam.service.AuthorizationService;
 //import com.pidevteam.service.EmailService;
+import com.pidevteam.service.EmailService;
 import com.pidevteam.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.MessagingException;
@@ -21,8 +23,8 @@ public class AuthorizationController {
 
     @Autowired
     private UserService userService;
-   // @Autowired
-    //EmailService emailService;
+    @Autowired
+    EmailService emailService;
 
     @GetMapping(value="/authorization")
     public List<Authorization> listAuthorization(){
@@ -52,7 +54,7 @@ public class AuthorizationController {
     public Authorization update(@RequestBody Authorization authorization){
         return authorizationService.update(authorization);
     }
-/*    @PutMapping(value = "/authorization/validate" )
+    @PutMapping(value = "/authorization/validate" )
     public Authorization validate(@RequestBody Authorization authorization){
         authorization.setStatus(authorization.getStatus());
         if(authorization.getStatus() == 1) {
@@ -83,6 +85,6 @@ public class AuthorizationController {
             }).start();
         }
         return authorizationService.update(authorization);
-    }*/
+    }
 
-}
+}*/

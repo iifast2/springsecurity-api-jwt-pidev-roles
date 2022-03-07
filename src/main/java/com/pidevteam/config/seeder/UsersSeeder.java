@@ -1,9 +1,9 @@
 package com.pidevteam.config.seeder;
 
-import com.pidevteam.entity.Mail;
+//import com.pidevteam.entity.Mail;
 import com.pidevteam.entity.RoleEnum;
 import com.pidevteam.entity.dto.UserDto;
-import com.pidevteam.service.MailService;
+//import com.pidevteam.service.MailService;
 import com.pidevteam.service.UserService;
 import com.sun.javafx.fxml.BeanAdapter;
 import org.springframework.beans.factory.annotation.Autowired;

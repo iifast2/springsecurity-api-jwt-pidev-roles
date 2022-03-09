@@ -53,15 +53,6 @@ public class UserController {
     @RequestMapping(value="/users", method = RequestMethod.POST)
     public User saveUser(@RequestBody UserDto user){
 
-   /*     Mail mail = new Mail();
-        mail.setMailFrom("Authdaritn@gmail.com");
-        mail.setMailTo("Authdaritn@gmail.com");
-        mail.setMailSubject("Spring Boot - Email Example");
-        mail.setMailContent("Learn How to send Email using Spring Boot!!!\n\nThanks\nmabttech.medium.com");
-
-        //BeanAdapter ctx;
-        MailService mailService = null;
-        mailService.sendEmail(mail);*/
 
 
         return userService.save(user);

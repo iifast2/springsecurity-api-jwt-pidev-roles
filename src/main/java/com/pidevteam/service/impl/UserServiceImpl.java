@@ -1,7 +1,9 @@
 package com.pidevteam.service.impl;
 
+import com.pidevteam.controller.SMSController;
 import com.pidevteam.entity.RoleEnum;
 import com.pidevteam.entity.util.ChangePasswordVM;
+import com.pidevteam.entity.util.SmsPojo;
 import com.pidevteam.repository.RoleRepository;
 import com.pidevteam.repository.UserRepository;
 import com.pidevteam.entity.User;
@@ -73,7 +75,8 @@ public class UserServiceImpl implements UserDetailsService, UserService {
 	public User findById(Long id) {
 		return userRepository.findById(id).get();
 	}
-
+@Autowired
+	SMSController smsController ;
 	@Override
     public User save(UserDto user) {
 		User newUser = new User();
@@ -83,8 +86,13 @@ public class UserServiceImpl implements UserDetailsService, UserService {
 		newUser.setUsername(user.getUsername());
 		if (user.getPassword() != null)
 	{		newUser.setPassword(bcryptEncoder.encode(user.getPassword()));
-		emailSenderService.sendMail("anonymousmega04@gmail.com", "this is an email! \n \n your user password : " + user.getPassword(), "Women empowerment user infos ");
+		if(user.getEmail() != null){
+		emailSenderService.sendMail(user.getEmail(), "this is an email! \n \n your user password : " + user.getPassword(), "Women empowerment user infos ");
 	    //https://i.imgur.com/7s5Jv7k.png
+			}
+		if(user.getPhone() != null){
+			smsController.smsSubmit(new SmsPojo(user.getPhone(),"Welcome to Women Empowerment app - your user password : " + user.getPassword() +" and your username "+user.getUsername()));
+		}
 
 	}
 		else

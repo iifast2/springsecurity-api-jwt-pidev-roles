@@ -12,7 +12,7 @@ public class WebsocketConfig implements WebSocketMessageBrokerConfigurer {
 
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
-        registry.addEndpoint("/socket")
+        registry.addEndpoint("/socket","/gs-guide-websocket")
                 .setAllowedOrigins("*")
                 .withSockJS();
     }
@@ -20,6 +20,9 @@ public class WebsocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void configureMessageBroker(MessageBrokerRegistry registry) {
         registry.setApplicationDestinationPrefixes("/socket-subscriber")
-                .enableSimpleBroker("/socket-front-project", "/notifications");
+                .enableSimpleBroker("/socket-front-project", "/notifications","/lesson");
     }
+
+
+
 }

@@ -37,7 +37,7 @@ public class User {
     private String address;
 
 
-    @Column(unique = true)
+    //@Column(unique = true)
     private String email;
 
 
@@ -55,9 +55,24 @@ public class User {
             @JoinColumn(name = "ROLE_ID") })
     @JsonIgnoreProperties("users")
     private List<Role> roles = new ArrayList<>();
+private  String phone ;
 
+    public Subscription getSubscriptions() {
+        return subscriptions;
+    }
 
-   // @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    public void setSubscriptions(Subscription subscriptions) {
+        this.subscriptions = subscriptions;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+// @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
    // @JsonIgnoreProperties("user")
   //  private List<Request> requests;
 

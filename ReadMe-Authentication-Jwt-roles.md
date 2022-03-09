@@ -179,8 +179,19 @@ ________
 <br/>
 
 
-## Change Password - GET 
+## Change Password - POST
+
+1. **POST :** <br/>
+   **GET :**
+2. ```
+     http://localhost:8080/token
+     http://localhost:8080/auth
+   ```
+   
+
 (change password : /password )
+
+**POST :**
 
 ```
 http://localhost:8080/password
@@ -285,7 +296,12 @@ http://localhost:8080/genrateAndDownloadQRCode/SILVER_IMAGE_PATH/350/350
 
 <br/><br/><br/><br/><br/><br/><br/>
 _____
+_____ 
 
+
+```
+
+```
 
 
 

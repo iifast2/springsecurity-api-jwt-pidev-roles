@@ -2,6 +2,7 @@ package com.pidevteam.entity.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.pidevteam.entity.RoleEnum;
+import com.pidevteam.entity.Subscription;
 //import com.pidevteam.entity.UserProject;
 
 import java.util.List;
@@ -20,7 +21,8 @@ public class UserDto {
     private String email;
 
     private List<RoleEnum> roles;
-
+    private String phone;
+    private  Subscription subscriptions ;
     public UserDto(Long id, String username, String password, String birthdate, String address,String email) {
         this.id = id;
         this.username = username;
@@ -28,6 +30,22 @@ public class UserDto {
         this.birthdate = birthdate;
         this.address = address;
         this.email = email;
+
+    }
+    public Subscription getSubscriptions() {
+        return subscriptions;
+    }
+
+    public void setSubscriptions(Subscription subscriptions) {
+        this.subscriptions = subscriptions;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public UserDto(Long id, String firstName, String lastName, String username, String password, String birthdate, String address, String email) {

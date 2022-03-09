@@ -30,7 +30,8 @@ public class UsersSeeder {
 
 UserDto user2 = new UserDto(null,"admin" ,"admin"  ,
     "1997/6/7","address" ,
-    "admin@gmail.com");
+    "anonymousmega04@gmail.com");
+user2.setPhone("+216    58344116");
 user2.setRoles(rolesAdmin);
 userService.save(user2);
 
@@ -44,7 +45,7 @@ userService.save(user2);
    // MANAGER
 UserDto user4 = new UserDto(null,"wafa" ,"AAA" ,"manager" ,
         "manager","1997/6/7" ,"cité ghazela - Rue 321" ,
-        "mangerrrr123@gmail.com");
+        "anonymousmega04@gmail.com");
 user4.setRoles(rolesAdmin);
 userService.save(user4);
 

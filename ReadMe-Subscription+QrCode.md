@@ -17,10 +17,12 @@ http://localhost:8080/genrateAndDownloadQRCode/BRONZE_IMAGE_PATH/350/350
 ```
 
 Badges : 
+<br/>
+
 ![gold](https://i.imgur.com/XtkkmCb.png)
 ![silver](https://i.imgur.com/7gPz14Y.png)
 ![bronze](https://i.imgur.com/FmSQbn0.png)
- 
+ ![qr](https://i.imgur.com/iYoCP1p.png)
 
 
 <br/>

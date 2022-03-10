@@ -5,11 +5,18 @@
 
 
 
-# Dashboard 
+# Dashboard Admin - Google charts : 
 
 ```
 http://localhost:8080/dashboard
 ```
+
+
+
+<br/>
+
+![1chart](https://i.imgur.com/iEfC56k.png)
+
 
 <br/>
 
